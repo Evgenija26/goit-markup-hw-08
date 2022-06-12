@@ -1,9 +1,25 @@
 /*============================*/
 /* About us*/
 /*============================*/
-.about-us__sektion {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .about-us__sektion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__sektion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__sektion {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about-us__list {
@@ -16,6 +32,7 @@
 .about-us__item {
   margin-right: 30px;
 }
+
 .about-us__item:last-child {
   margin-right: 0px;
 }
@@ -57,4 +74,5 @@
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
   margin-top: 10px;
-}/*# sourceMappingURL=about-us.css.map */
+}
+/*# sourceMappingURL=about-us.css.map */

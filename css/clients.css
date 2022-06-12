@@ -13,7 +13,7 @@
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   margin: 0 auto;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -59,9 +59,11 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients__item:last-child {
   margin-right: 0px;
 }
+
 .clients__item:hover, .clients__item:focus {
   color: var(--accent-cl);
   border: 1px solid var(--accent-cl);
@@ -96,10 +98,12 @@
   fill: var(--icon-color);
   fill: currentColor;
 }
+
 .clients__user:hover, .clients__user:focus {
   color: var(--accent-cl);
 }
 
 .clients__client:hover, .clients__client:focus {
   color: var(--accent-cl);
-}/*# sourceMappingURL=clients.css.map */
+}
+/*# sourceMappingURL=clients.css.map */

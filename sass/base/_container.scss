@@ -1,5 +1,26 @@
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    //mobile screen from 480px
+    
+
+    @include mg(mobile){
+        width: 448px;
+    }
+
+    //tablet screen from 768px
+    
+        @include mg(tablet) {
+            width: 720px;
+        }
+
+    //descktop screen from 1280px
+
+        @include mg(desktop) {
+            width: 1200px;
+        }
 }

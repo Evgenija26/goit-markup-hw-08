@@ -25,6 +25,7 @@
 .portfolio__item {
   margin-right: 8px;
 }
+
 .portfolio__item:last-child {
   margin-right: 0;
 }
@@ -51,6 +52,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--white);
   background-color: var(--accent-cl);
@@ -84,9 +86,11 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio__projects-item:last-child {
   margin-right: 0px;
 }
+
 .portfolio__projects-item:hover, .portfolio__projects-item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -127,6 +131,7 @@
   background: rgba(33, 150, 243, 0.9);
   overflow: hidden;
 }
+
 .portfolio__box:hover .overlay {
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translatey(0);
@@ -195,4 +200,5 @@
   color: var(--white);
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
-}/*# sourceMappingURL=portfolio.css.map */
+}
+/*# sourceMappingURL=portfolio.css.map */

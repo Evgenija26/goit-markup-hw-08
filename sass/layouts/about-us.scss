@@ -3,8 +3,20 @@
 /*============================*/
 
 .about-us__sektion {
+    @media screen and (min-width: 480px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1280px){
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 .about-us__list {

@@ -24,6 +24,7 @@
   display: flex;
   margin-top: 50px;
 }
+
 .our-work__list:last-child {
   margin-right: 0px;
 }
@@ -39,7 +40,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 00.03em;
   text-transform: uppercase;
   color: #ffffff;
   display: -webkit-box;
@@ -57,4 +58,5 @@
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-}/*# sourceMappingURL=our-work.css.map */
+}
+/*# sourceMappingURL=our-work.css.map */
