@@ -1,0 +1,195 @@
+/*============================*/
+/* Portfolio*/
+/*============================*/
+
+.portfolio__section {
+    background: var(--white);
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.portfolio__list {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio__item {
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.portfolio__btn {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    color: var(--main-txt-cl);
+    border: none;
+
+    background: --bg-grey;
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: var(--white);
+        background-color: var(--accent-cl);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+}
+
+/*============================*/
+/*Projects*/
+/*============================*/
+
+.portfolio__projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    list-style: none;
+}
+
+.portfolio__projects-item {
+    margin: 15px;
+    background: var(--white);
+
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl),
+        box-shadow 250ms var(--accent-cl);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:last-child {
+            margin-right: 0px;
+        }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio__projects-item-title {
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio__projects-desc {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+    color: var(--main-txt-cl);
+
+}
+
+.portfolio__projects-tagline {
+    display: block;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+
+}
+
+.portfolio__box {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(33, 150, 243, 0.9);
+
+    overflow: hidden;
+
+
+    &:hover .overlay {
+        background: rgba(33, 150, 243, 0.9);
+        transform: translatey(0);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+
+.portfolio__box-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    justify-content: center;
+
+    letter-spacing: 0.03em;
+
+    color: var(--white);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translatey(101%);
+    transition: transform 250ms ease color var(--accent-cl);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay>p {
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.overlay code {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    transform: translate(0);
+    font-size: 18px;
+    line-height: 1.56;
+    transition: transform 250ms var(--hover-cubic);
+    color: var(--white);
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+}

@@ -1,0 +1,16 @@
+/* Плавниий скролінг до секції */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    position: relative;
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+
+    background: var(--white);
+}

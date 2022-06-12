@@ -1,0 +1,20 @@
+.header__logo-top-line {
+    display: block;
+    margin-right: 93px;
+}
+
+.logo {
+    box-sizing: border-box;
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.19;
+    padding: 30px 0;
+
+    color: var(--main-txt-cl);
+    text-decoration: none;
+}
+
+.web {
+    font-family: var(--secondary-font);
+    color: var(--accent-cl);
+}

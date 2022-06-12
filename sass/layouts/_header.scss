@@ -1,0 +1,156 @@
+/*============================*/
+/* Header*/
+/*============================*/
+
+.header,
+.top-line {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container,
+.top-line-container {
+    align-items: center;
+    display: flex;
+
+    background: var(--white);
+}
+
+/*============================*/
+/* menu nav*/
+/*============================*/
+
+.nav {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav__list {
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.nav__item {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+}
+
+.nav__link {
+    color: var(--main-txt-cl);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    cursor: pointer;
+    line-height: 4px;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+}
+
+.nav__top-nav {
+    position: relative;
+    color: var(--accent-cl);
+
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        left: 50%;
+        width: 100%;
+        height: 4px;
+
+        transform: translateX(-50%);
+        border-radius: 2px;
+
+        bottom: -1px;
+        background-color: var(--accent-cl);
+    }
+}
+
+/*================================*/
+/* телефон, e-mail в шапке*/
+/*================================*/
+
+.header__contact-list {
+    display: block;
+    display: flex;
+    margin-left: auto;
+}
+
+.header__contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-contact {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header__contact-item {
+    display: inline-block;
+    margin-left: 50px;
+
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-cl)
+    }
+}
+
+.header__contact-link {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--secondary-txt-cl);
+    fill: var(--secondary-txt-cl);
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+}
+
+.studio-icon {
+    margin-right: 10px;
+
+
+    &:hover,
+    &:focus{
+        color: var(--accent-cl)
+    }
+}

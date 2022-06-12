@@ -1,0 +1,73 @@
+/*======================*/
+/* Social icons */
+/*======================*/
+.footer__socials-container {
+    margin-right: 70px;
+}
+
+.footer__socials-title {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socials__list {
+    margin-top: 20px;
+
+
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+    width: 44px;
+    height: 44px;
+
+    background: rgba(255, 255, 255, 0.1);
+    fill: currentColor;
+
+    border-radius: 50%;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background-color: var(--accent-cl);
+    }
+}
+
+.socials__icon-footer {
+    fill: currentColor;
+    fill: var(--white);
+    
+    
+    &:hover,
+    &:focus{
+    color: #ffffff;
+    background-color: var(--accent-cl);
+}
+}
+
+

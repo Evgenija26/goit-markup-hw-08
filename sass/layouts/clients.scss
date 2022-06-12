@@ -1,0 +1,96 @@
+/*============================*/
+/* Regular costomers */
+/*============================*/
+
+.clients__section {
+    padding: 94px 0;
+}
+
+.clients__titel {
+    box-sizing: border-box;
+
+    line-height: 1.17;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    width: 170px;
+    height: 92px;
+    margin: 15px;
+
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:last-child {
+            margin-right: 0px;
+        }
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+        border: 1px solid var(--accent-cl);
+    }
+}
+
+.clients__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 16px 32px;
+
+    align-self: center;
+    color: var(--icon-color);
+    fill: currentColor;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    fill: var(--icon-color);
+    fill: currentColor;
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+}
+
+.clients__client{
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+}
+
