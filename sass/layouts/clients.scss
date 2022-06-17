@@ -36,15 +36,15 @@
 }
 
 .clients__list {
-
+    list-style: none;
     
     @media screen and(min-width: 480px){
-        display: block;
+        display: flex;
     }
 
     @media screen and(min-width: 768px){
         display: flex;
-        // flex-wrap: nowrap;
+        flex-wrap: wrap;
         
         align-items: center;
         justify-content: center;
@@ -67,25 +67,19 @@
     
     @media screen and(min-width: 480px) {
 
-        margin: 15px;
-        width: calc((100% - 6 * 15px) / 3);
-
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         box-sizing: border-box;
+        flex-basis: calc((100% - 30px) / 2);
 
-        // width: 210px;
-        // height: 92px;
-        // margin: 15px;
+        width: 210px;
+        height: 92px;
+        margin: 15px;
 
         transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
-        &:last-child {
-            margin-right: 0px;
-        }
 
         &:hover,
         &:focus {
@@ -96,21 +90,19 @@
 
     @media screen and(min-width: 768px){
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         box-sizing: border-box;
+        
+        flex-basis: calc((100% - 30px) / 4);
 
         // width: 220px;
         // height: 92px;
-        // margin: 15px;
+        margin: 15px;
 
         transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
-        &:last-child {
-            margin-right: 0px;
-        }
     
         &:hover,
         &:focus {
@@ -122,21 +114,19 @@
     @media screen and(min-width:1280px) {
         
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     box-sizing: border-box;
-
+    flex-basis: calc((100% - 30px) / 4);
+   
     // width: 170px;
     // height: 92px;
-    // margin: 15px;
+    margin: 15px;
 
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    &:last-child {
-            margin-right: 0px;
-        }
     
     &:hover,
     &:focus {
