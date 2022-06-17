@@ -875,13 +875,6 @@ img {
 .about-us__list {
   list-style: none;
 }
-@media screen and (min-width: 480px) {
-  .about-us__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 @media screen and (min-width: 768px) {
   .about-us__list .about-us__list {
     display: -webkit-box;
@@ -904,10 +897,14 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
   }
 }
 @media screen and (min-width: 768px) {
@@ -920,6 +917,12 @@ img {
         flex-wrap: wrap;
     -ms-flex-preferred-size: calc((100% - 30px) / 4);
         flex-basis: calc((100% - 30px) / 4);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -932,6 +935,12 @@ img {
         flex-wrap: nowrap;
     -ms-flex-preferred-size: calc((100% - 30px) / 4);
         flex-basis: calc((100% - 30px) / 4);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -939,7 +948,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-top: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -949,26 +958,21 @@ img {
   background: var(--bg-grey);
   border-radius: 4px;
 }
-@media screen and (min-width: 480px) {
-  .about-us__icon {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 767px) {
-  .about-us__icon .about-us__icon {
-    width: 270px;
-    height: 120px;
-  }
-}
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .about-us__subtitle {
     text-align: center;
     width: 100%;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .about-us__subtitle .about-us__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
@@ -1098,6 +1102,9 @@ img {
   color: var(--main-txt-cl);
 }
 
+.team__list {
+  margin: -15px;
+}
 @media screen and (min-width: 480px) {
   .team__list {
     display: block;
@@ -1120,15 +1127,17 @@ img {
 
 @media screen and (min-width: 480px) {
   .team__item {
-    margin-top: 30px;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background: #FFFFFF;
     /* material shadow v1 */
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-  }
-  .team__item:last-child {
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1139,8 +1148,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     background: #FFFFFF;
     /* material shadow v1 */
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1230,12 +1239,15 @@ img {
 
 .clients__list {
   list-style: none;
+  margin: -15px;
 }
 @media screen and (min-width: 480px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1245,15 +1257,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1263,15 +1266,6 @@ img {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-top: 50px;
   }
 }
 
@@ -1289,8 +1283,6 @@ img {
             box-sizing: border-box;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
-    width: 210px;
-    height: 92px;
     margin: 15px;
     -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
@@ -1318,8 +1310,8 @@ img {
             justify-content: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
     margin: 15px;
     -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);

@@ -35,12 +35,15 @@
 
 .clients__list {
   list-style: none;
+  margin: -15px;
 }
 @media screen and (min-width: 480px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -50,15 +53,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -68,15 +62,6 @@
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-top: 50px;
   }
 }
 
@@ -94,8 +79,6 @@
             box-sizing: border-box;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
-    width: 210px;
-    height: 92px;
     margin: 15px;
     -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
@@ -123,8 +106,8 @@
             justify-content: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
     margin: 15px;
     -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
