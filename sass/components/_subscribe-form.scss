@@ -17,10 +17,28 @@
     margin-bottom: 20px;
 
     color: var(--white);
+
 }
 
 .footer__subscribe-box {
     margin-left: auto;
+
+    @media screen and(min-width: 480px) {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
+    
+        @media screen and(min-width:768px) {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        @media screen and(min-width:1200px) {
+            margin-right: 70px;
+        }
 }
 
 .footer__subscribe-form .input {
@@ -53,8 +71,28 @@
     display: flex;
 }
 
+.footer__subscribe-form{
+    display: flex;
+    align-items: center;
+
+    @media screen and(min-width: 480px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    @media screen and(min-width:768px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 .footer__subscribe-form .btn {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px 28px;
 

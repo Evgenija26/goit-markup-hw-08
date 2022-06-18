@@ -137,8 +137,25 @@ img {
 /*======================*/
 /* Social icons */
 /*======================*/
-.footer__socials-container {
-  margin-right: 70px;
+@media screen and (min-width: 480px) {
+  .footer__socials-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__socials-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials-container {
+    margin-right: 70px;
+  }
 }
 
 .footer__socials-title {
@@ -238,7 +255,6 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -253,6 +269,16 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal .btn.close {
@@ -533,6 +559,26 @@ img {
 .footer__subscribe-box {
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .footer__subscribe-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__subscribe-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-box {
+    margin-right: 70px;
+  }
+}
 
 .footer__subscribe-form .input {
   display: block;
@@ -582,10 +628,35 @@ img {
   display: flex;
 }
 
+.footer__subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__subscribe-form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__subscribe-form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer__subscribe-form .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -790,12 +861,6 @@ img {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -817,14 +882,13 @@ img {
 @media screen and (max-width: 1199px) {
   .hero__title {
     max-width: 360px;
-    max-height: 84px;
     font-size: 26px;
     line-height: 42px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 696px;
+    max-width: 670px;
     max-height: 120px;
     font-size: 44px;
     line-height: 1.36;
@@ -833,12 +897,9 @@ img {
 
 .hero__button {
   background-color: var(--accent-cl);
-  margin-left: auto;
-  margin-right: auto;
   border: none;
   width: 200px;
   height: 50px;
-  position: relative;
   display: inline-block;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1444,9 +1505,21 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__logo {
@@ -1455,8 +1528,25 @@ img {
   padding: 0;
 }
 
-.footer__list-container {
-  margin-right: 70px;
+@media screen and (min-width: 480px) {
+  .footer__list-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__list-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list-container {
+    margin-right: 70px;
+  }
 }
 
 .footer__address {
