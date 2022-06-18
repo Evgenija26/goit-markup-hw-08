@@ -23,8 +23,6 @@
 .about-us__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     
     margin: -15px;
 
@@ -62,9 +60,13 @@
 
 .about-us__subtitle {
 
-    text-align: center;
+    
     width: 100%;
     margin-top: 30px;
+
+    @media screen and(max-width: 767.68px){
+        text-align: center;
+    }
 
 }
 
