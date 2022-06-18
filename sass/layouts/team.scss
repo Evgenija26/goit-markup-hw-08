@@ -36,7 +36,7 @@
 .team__list { 
     display: flex;
     flex-wrap: wrap;
-     list-style: none;
+    list-style: none;
     margin: -15px;
     justify-content: center;
 
@@ -44,6 +44,7 @@
 
 .team__item {
     margin: 15px;
+    width: 100%;
     
     background: #FFFFFF;
         /* material shadow v1 */
@@ -53,19 +54,17 @@
     border-radius: 0px 0px 4px 4px;
 
     @media screen and(min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
+        
         margin: 15px;
         flex-basis: calc((100% - 60px) / 2);
-        width: 354px;
+        // width: 354px;
     }
 
     @media screen and(min-width: 1200px) {
-        display: flex;
         margin: 15px;
-        flex-wrap: nowrap;
+        
         flex-basis: calc((100% - 120px) / 4);
-        width: 270px;
+        // width: 270px;
     }
 }
 
