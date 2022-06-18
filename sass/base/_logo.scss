@@ -1,6 +1,14 @@
 .header__logo-top-line {
     display: block;
-    margin-right: 93px;
+    
+    
+    @media screen and(max-width: 1199px){
+        margin-left: 15px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .logo {
@@ -12,6 +20,8 @@
 
     color: var(--main-txt-cl);
     text-decoration: none;
+
+
 }
 
 .web {

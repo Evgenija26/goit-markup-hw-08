@@ -1,10 +1,17 @@
 /*============================*/
 /* our work */
 /*============================*/
-.our-work__sektion {
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .our-work__sektion {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-work__sektion {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 94px;
+  }
 }
 
 .our-work__title {

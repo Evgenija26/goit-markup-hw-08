@@ -13,11 +13,23 @@
 }
 
 .portfolio__list {
-    margin-right: auto;
-    margin-left: auto;
+    
     display: flex;
+    flex-wrap: wrap;
+    
     justify-content: center;
-    margin-bottom: 50px;
+
+    @media screen and(min-width: 480px) {
+            margin-bottom: 30px;
+        }
+
+    @media screen and(min-width: 768px){
+        margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio__item {
@@ -27,7 +39,6 @@
         margin-right: 0;
     }
 }
-
 
 .portfolio__btn {
     font-family: var(--main-font);
@@ -74,6 +85,20 @@
 .portfolio__projects-item {
     margin: 15px;
     background: var(--white);
+
+    @media screen and(min-width: 768px) {
+
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
+        
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin: 15px;
+
+        flex-basis: calc((100% - 120px) / 4);
+       
+    }
 
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl),
         box-shadow 250ms var(--accent-cl);

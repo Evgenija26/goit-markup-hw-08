@@ -22,12 +22,22 @@
 .nav {
     display: flex;
     align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width: 480px){
+        display: none;
+    }
+
+    @media screen and (min-width: 768px){
+        display: block;
+    }
 }
 
 .nav__list {
-    margin-right: auto;
+    
     display: flex;
-    justify-content: space-evenly;
+
     text-align: center;
 }
 
@@ -39,6 +49,10 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     margin-right: 50px;
+}
+
+.nav__item:last-child {
+    margin-right: 0px;
 }
 
 .nav__link {
@@ -84,17 +98,28 @@
 /* телефон, e-mail в шапке*/
 /*================================*/
 
-.header__contact-list {
-    display: block;
-    display: flex;
-    margin-left: auto;
-}
+// .header__contact-list {
+//     display: block;
+//     display: flex;
+//     margin-left: auto;
+// }
 
 .header__contact-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
+    @media screen and(min-width: 480px){
+        display: none;
+    }
+
+    @media screen and(min-width: 768px){
+        display: block;
+        margin-right: 15px;
+    }
+
+    @media screen and(min-width: 1200px){
+        display: flex;
+        margin-left: auto;
+    }
+
+    }
 
 .header-contact {
     font-family: var(--main-font);
@@ -107,9 +132,15 @@
 }
 
 .header__contact-item {
-    display: inline-block;
-    margin-left: 50px;
+    
+    @media screen and(min-width: 768px){
+        
+    }
 
+    @media screen and(min-width: 1200px){
+        margin-left: 50px;
+        display: inline-block;
+    }
     
     &:hover,
     &:focus {
@@ -124,10 +155,6 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    display: flex;
     align-items: center;
     text-decoration: none;
 
@@ -136,8 +163,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     color: var(--secondary-txt-cl);
-    fill: var(--secondary-txt-cl);
 
+    @media screen and(min-width:1200px){
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+    }
 
     &:hover,
     &:focus {
@@ -147,7 +178,7 @@
 
 .studio-icon {
     margin-right: 10px;
-
+    align-items: baseline;
 
     &:hover,
     &:focus{
