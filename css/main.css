@@ -951,6 +951,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 30px;
     width: 354px;
     height: 120px;
   }
@@ -960,6 +961,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-bottom: 30px;
     width: 270px;
     -webkit-box-align: center;
@@ -1121,74 +1124,37 @@ img {
 
 .team__list {
   list-style: none;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .team__list {
-    display: block;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin-bottom: 30px;
-  }
+  margin: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
-  .team__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
+.team__item {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #FFFFFF;
+  /* material shadow v1 */
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    margin-right: 30px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
     width: 354px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 30px;
-    background: #FFFFFF;
-    /* material shadow v1 */
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
   }
 }
 @media screen and (min-width: 1280px) {
   .team__item {
-    margin: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-preferred-size: calc((100% - 30px) / 4);
         flex-basis: calc((100% - 30px) / 4);
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    width: 270px;
   }
 }
 
@@ -1258,134 +1224,59 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
-  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -15px;
-}
-@media screen and (min-width: 480px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
 }
 
 .clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: calc((100% - 30px) / 3);
+      flex-basis: calc((100% - 30px) / 3);
+  height: 92px;
   margin: 15px;
+  -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
+  transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
+  transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+  transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
-  .clients__item .clients__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -ms-flex-preferred-size: calc((100% - 30px) / 3);
-        flex-basis: calc((100% - 30px) / 3);
-    width: 210px;
-    height: 92px;
-    margin: 15px;
-    -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__item .clients__item:hover, .clients__item .clients__item:focus {
-    color: var(--accent-cl);
-    border: 1px solid var(--accent-cl);
-  }
+.clients__item:hover, .clients__item:focus {
+  color: var(--accent-cl);
 }
 @media screen and (min-width: 768px) {
-  .clients__item .clients__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  .clients__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 4);
         flex-basis: calc((100% - 30px) / 4);
-    width: 220px;
-    height: 92px;
-    margin: 15px;
-    -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__item .clients__item:hover, .clients__item .clients__item:focus {
-    color: var(--accent-cl);
-    border: 1px solid var(--accent-cl);
   }
 }
 @media screen and (min-width: 1280px) {
-  .clients__item .clients__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
-    width: 170px;
-    height: 92px;
-    margin: 15px;
-    -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__item .clients__item:hover, .clients__item .clients__item:focus {
-    color: var(--accent-cl);
-    border: 1px solid var(--accent-cl);
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 6);
+        flex-basis: calc((100% - 30px) / 6);
   }
 }
 
@@ -1420,6 +1311,7 @@ img {
 }
 .clients__user:hover, .clients__user:focus {
   color: var(--accent-cl);
+  border: 1px solid var(--accent-cl);
 }
 
 .clients__client:hover, .clients__client:focus {

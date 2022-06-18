@@ -97,6 +97,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 30px;
     width: 354px;
     height: 120px;
   }
@@ -106,6 +107,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-bottom: 30px;
     width: 270px;
     -webkit-box-align: center;
