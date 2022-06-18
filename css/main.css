@@ -621,6 +621,11 @@ img {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 1199px) {
+  .footer__subscribe-form .input {
+    margin-bottom: 20px;
+  }
+}
 
 .form-btn-box {
   display: -webkit-box;
@@ -632,6 +637,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1507,6 +1517,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .footer__container {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__container {
