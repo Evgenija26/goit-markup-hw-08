@@ -65,6 +65,9 @@
   }
 }
 
+.clients__item {
+  margin: 15px;
+}
 @media screen and (min-width: 480px) {
   .clients__item .clients__item {
     display: -webkit-box;
@@ -141,6 +144,8 @@
             box-sizing: border-box;
     -ms-flex-preferred-size: calc((100% - 30px) / 4);
         flex-basis: calc((100% - 30px) / 4);
+    width: 170px;
+    height: 92px;
     margin: 15px;
     -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
