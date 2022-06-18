@@ -13,7 +13,7 @@
         padding-bottom: 60px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -49,14 +49,13 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    flex-basis: calc((100% - 30px) / 3);
+    flex-basis: calc((100% - 60px) / 2);
     height: 92px;
     margin: 15px;
 
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 
     &:hover,
     &:focus {
@@ -65,14 +64,11 @@
     }
 
     @media screen and(min-width: 768px) {
-        flex-basis: calc((100% - 30px) / 4)
-
+        flex-basis: calc((100% - 90px) / 3)
     }
 
-    @media screen and(min-width:1280px) {
-      
-        flex-basis: calc((100% - 30px) / 6)
-
+    @media screen and(min-width:1200px) {
+        flex-basis: calc((100% - 180px) / 6)
     }
 }
     
@@ -83,7 +79,9 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 16px 32px;
+    // padding: 16px 32px;
+    width: 100%;
+    height: 100%;
 
     align-self: center;
     color: var(--icon-color);
@@ -96,11 +94,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    fill: var(--icon-color);
-    fill: currentColor;
-
-
     &:hover,
     &:focus {
         color: var(--accent-cl);
@@ -109,8 +102,5 @@
 }
 
 .clients__client{
-    &:hover,
-    &:focus {
-        color: var(--accent-cl);
-    }
+    fill: currentColor;
 }

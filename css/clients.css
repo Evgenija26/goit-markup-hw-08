@@ -11,7 +11,7 @@
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .clients__section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -58,8 +58,8 @@
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -ms-flex-preferred-size: calc((100% - 30px) / 3);
-      flex-basis: calc((100% - 30px) / 3);
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
   height: 92px;
   margin: 15px;
   -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
@@ -76,14 +76,14 @@
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 4);
-        flex-basis: calc((100% - 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 6);
-        flex-basis: calc((100% - 30px) / 6);
+    -ms-flex-preferred-size: calc((100% - 180px) / 6);
+        flex-basis: calc((100% - 180px) / 6);
   }
 }
 
@@ -99,7 +99,8 @@
           justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
   -ms-flex-item-align: center;
       align-self: center;
   color: var(--icon-color);
@@ -113,14 +114,12 @@
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--icon-color);
-  fill: currentColor;
 }
 .clients__user:hover, .clients__user:focus {
   color: var(--accent-cl);
   border: 1px solid var(--accent-cl);
 }
 
-.clients__client:hover, .clients__client:focus {
-  color: var(--accent-cl);
+.clients__client {
+  fill: currentColor;
 }/*# sourceMappingURL=clients.css.map */

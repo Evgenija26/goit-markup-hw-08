@@ -107,16 +107,16 @@
             flex-wrap: wrap;
             margin-bottom: 30px;
             // flex-basis: calc();
-        width: 354px;
-        height: 120px;
+        // width: 354px;
+        // height: 120px;
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: nowrap;
         margin-bottom: 30px;
-        width: 270px;
+        // width: 270px;
     
         align-items: center;
         justify-content: center;
