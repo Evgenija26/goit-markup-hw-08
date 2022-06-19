@@ -84,6 +84,7 @@
 
 .portfolio__projects-item {
     margin: 15px;
+    width: 100%;
     background: var(--white);
 
     @media screen and(min-width: 768px) {
@@ -104,11 +105,6 @@
         box-shadow 250ms var(--accent-cl);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    &:last-child {
-            margin-right: 0px;
-        }
 
     &:hover,
     &:focus {
@@ -150,7 +146,7 @@
 
 .portfolio__box {
     position: relative;
-    width: 370px;
+    
     height: 294px;
     margin-left: auto;
     margin-right: auto;
@@ -165,6 +161,15 @@
         box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
+
+    @media screen and(min-width: 1200px){
+        width: 370px;
+    }
+
+    @media screen and(min-width: 768px){
+        width: 354px;
+    }
+        
 }
 
 
