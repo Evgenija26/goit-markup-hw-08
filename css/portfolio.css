@@ -99,18 +99,18 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
-  .portfolio__projects-item {
-    margin: 15px;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
-  }
-}
 @media screen and (min-width: 1200px) {
   .portfolio__projects-item {
     margin: 15px;
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__projects-item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 .portfolio__projects-item:hover, .portfolio__projects-item:focus {
@@ -146,7 +146,6 @@
 
 .portfolio__box {
   position: relative;
-  height: 294px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(33, 150, 243, 0.9);

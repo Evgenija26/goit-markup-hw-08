@@ -87,18 +87,18 @@
     width: 100%;
     background: var(--white);
 
-    @media screen and(min-width: 768px) {
-
-        margin: 15px;
-        flex-basis: calc((100% - 60px) / 2);
-        
-    }
-
     @media screen and(min-width: 1200px) {
         margin: 15px;
 
         flex-basis: calc((100% - 120px) / 4);
        
+    }
+
+    @media screen and(min-width: 768px) {
+
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
+        
     }
 
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl),
@@ -147,13 +147,11 @@
 .portfolio__box {
     position: relative;
     
-    height: 294px;
     margin-left: auto;
     margin-right: auto;
     background: rgba(33, 150, 243, 0.9);
 
     overflow: hidden;
-
 
     &:hover .overlay {
         background: rgba(33, 150, 243, 0.9);
