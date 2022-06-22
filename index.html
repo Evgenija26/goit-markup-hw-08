@@ -32,7 +32,40 @@
                             <li class="nav__item"><a class="nav__link link" href="./portfolio.html">Портфолио</a></li>
                             <li class="nav__item"><a class="nav__link link" href="Контакты">Контакты</a></li>
                         </ul>
-                    </nav>
+                    </nav> 
+
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mob-menu" data-menu-toggle>
+                        <svg class="mob-menu-icon" width="40px" height="40px">
+                            <use href="./image/sprite.svg#menu_24px"></use>
+                        </svg>
+                    </button>                   
+                                
+                    <div class="mob-menu js-mob-menu" id="mob-menu" data-menu>
+                        <button class="menu-toggle js-close-menu">
+                            <use href="./image/sprite.svg#close-black-18dp-2-1"></use>
+                        </button>
+                        <ul class="mob-menu__nav list">
+                            <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link  mob-menu__link--current">Студия</a>
+                            </li>
+                            <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link">Портфолио</a></li>
+                            <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакты</a></li>
+                        </ul>
+                    
+                        <ul class="mob-menu__contacts list">
+                            <li class="mob-menu__title-cont"><a href="tel:+380961111111" class="mob-menu__link-mob">+380961111111</a>
+                            </li>
+                            <li class="mob-menu__title-cont"><a href="mailto:info@devstudio.com"
+                                    class="mob-menu__link-cont">info@devstudio.com</a></li>
+                        </ul>
+                    
+                        <ul class="mob-menu__social list">
+                            <li class="mob-menu__item-soc"><a href="" class="mob-menu__link-soc">Instagram</a></li>
+                            <li class="mob-menu__item-soc"><a href="" class="mob-menu__link-soc">Twitter</a></li>
+                            <li class="mob-menu__item-soc"><a href="" class="mob-menu__link-soc">Facebook</a></li>
+                            <li class="mob-menu__item-soc"><a href="" class="mob-menu__link-soc">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
                     <ul class="header__contact-list">
                         <li class="header__contact-item">
                             <a href="mailto:info@devstudio.com" title="info@devstudio.com" class="header__contact-link">
@@ -49,31 +82,9 @@
                                 </svg>+380961111111</a>
                         </li>
                     </ul>
-                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                        
-                            <div class="menu-container js-menu-container" id="mobile-menu">
-                                <button class="menu-toggle js-close-menu">
-                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                                        <path fill-rule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                            
-                                <ul class="menu">
-                                    <li><a href="" class="link">О нас</a></li>
-                                    <li><a href="" class="link">Работы</a></li>
-                                    <li><a href="" class="link">Контакты</a></li>
-                                    <li><a href="" class="link">Карьера</a></li>
-                                </ul>
-                            </div>
+        <!-- mob menu -->
+       
+       
             </header>
             <!-- <main class="main-container"> -->
                   <!-- Hero -->
