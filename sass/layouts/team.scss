@@ -40,11 +40,15 @@
     margin: -15px;
     justify-content: center;
 
+    @media screen and(min-width:1200px){
+        flex-wrap: nowrap;
+    }
+
 }
 
 .team__item {
     margin: 15px;
-    width: 100%;
+  
     
     background: #FFFFFF;
         /* material shadow v1 */
@@ -67,6 +71,9 @@
         // width: 354px;
     }
 
+    @media screen and(max-width:450px){
+        width: 100%;
+    }
 }
 
 .team__member-group {

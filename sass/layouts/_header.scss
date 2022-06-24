@@ -11,6 +11,7 @@
 .top-line-container {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 
     background: var(--white);
 }
@@ -25,6 +26,10 @@
     margin-left: auto;
     margin-right: auto;
     
+    @media screen and(max-width: 768px){
+        display: none;
+    }
+
     @media screen and (min-width: 480px){
         display: none;
     }
@@ -105,7 +110,8 @@
 // }
 
 .header__contact-list {
-    @media screen and(min-width: 480px){
+
+    @media screen and(max-width:768px){
         display: none;
     }
 

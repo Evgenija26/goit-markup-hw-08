@@ -1,7 +1,7 @@
 /*============================*/
 /* our work */
 /*============================*/
-@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .our-work__sektion {
     display: none;
   }
