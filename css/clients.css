@@ -33,6 +33,16 @@
   line-height: 42px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1200px) {
+  .clients__titel {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .clients__titel {
+    margin-bottom: 30px;
+  }
+}
 
 .clients__list {
   display: -webkit-box;

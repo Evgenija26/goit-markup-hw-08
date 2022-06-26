@@ -29,12 +29,12 @@
     
   
     @media screen and(min-width: 1200px) {
-        margin-bottom: 50px;
+        
         justify-content: center;
     }  
 
     @media screen and(min-width: 768px){
-        margin-bottom: 30px;
+        
         justify-content: center;
     }
 
@@ -48,7 +48,7 @@
     }
 
     @media screen and(max-width:768px){
-        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 
@@ -92,31 +92,31 @@
     flex-wrap: wrap;
     margin: -15px;
     list-style: none;
+    
+    @media screen and(min-width:1200px){
+        margin-top: 50px;
+    }
 
-    @media screen and(max-width:767px){
+    @media screen and(max-width:1199px){
         justify-content: center;
+        margin-top: 30px;
     }
 }
 
 .portfolio__projects-item {
-    margin: 15px;
-    
+    margin: 15px;    
     background: var(--white);
+
+    @media screen and(min-width: 768px) {
+        margin: 15px;
+        flex-basis: calc((100% - 2 * 30px) / 2);  
+    }
 
     @media screen and(min-width: 1200px) {
         margin: 15px;
-
-        flex-basis: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 3);
        
     }
-
-    @media screen and(min-width: 768px) {
-
-        margin: 15px;
-        flex-basis: calc((100% - 60px) / 2);
-        
-    }
-
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl),
         box-shadow 250ms var(--accent-cl);
     transition-duration: 250ms;
@@ -133,6 +133,7 @@
 .portfolio__projects-item-title {
     padding: 20px 24px 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 .portfolio__projects-desc {
@@ -215,6 +216,7 @@
     transition: transform 250ms ease color var(--accent-cl);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
 }
 
 .overlay>p {
@@ -224,7 +226,7 @@
 .overlay code {
     position: absolute;
     display: flex;
-    align-items: center;
+    
     width: 100%;
     height: 100%;
     padding-left: 24px;
@@ -236,4 +238,16 @@
     color: var(--white);
     letter-spacing: 0.03em;
     background-color: rgba(33, 150, 243, 0.9);
+
+    @media screen and(min-width:1200px){
+        align-items: center;
+    }
+
+    @media screen and(min-width:768px) {
+        align-items: center;
+    }
+
+    @media screen and(min-width:480px) {
+        align-items: center;
+    }
 }

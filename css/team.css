@@ -3,8 +3,6 @@
 /*============================*/
 .team__section {
   background: var(--bg-grey);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .team__section {
@@ -12,7 +10,7 @@
     padding-bottom: 94px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .team__section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -29,6 +27,11 @@
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {

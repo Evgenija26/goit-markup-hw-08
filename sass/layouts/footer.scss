@@ -8,22 +8,29 @@
 }
 
 .footer__container {
-    
+    @media screen and(min-width: 1200px) {
+            align-items: baseline;
+            display: flex;
+        }
+}
 
-    @media screen and(min-width: 480px){
-    
-        justify-content: center;
+.footer__blok {
+
+    @media screen and(min-width: 1200px) {
+        align-items: baseline;
+        display: flex;
     }
 
     @media screen and(min-width: 768px) {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
     }
 
-    @media screen and(min-width: 1200px) {
-        align-items: baseline;
+    @media screen and(min-width: 480px){
+    
+        justify-content: center;
     }
 }
 

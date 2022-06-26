@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.footer__subscribe-box .footer__label-text {
+ .footer__label-text {
     display: block;
     font-weight: 700;
     line-height: 1.14;
@@ -21,6 +21,7 @@
 
 }
 
+
 .footer__subscribe-box {
     @media screen and(min-width:1200px) {
             margin-left: auto;
@@ -28,11 +29,11 @@
         }
 
     @media screen and(max-width:1199px){
-        margin-top: 60px;
+        margin-top: 60px;text-align: center;
     }
 
     @media screen and(max-width:768px) {
-            text-align: center;
+            
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 60px;
@@ -40,7 +41,6 @@
         }
     
         @media screen and(min-width:768px) {
-            text-align: center;
             margin-left: auto;
             margin-right: auto;
             

@@ -31,14 +31,14 @@
   display: flex;
   margin-top: 50px;
 }
-.our-work__list:last-child {
-  margin-right: 0px;
-}
 
 .our-work__item {
   position: relative;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+}
+.our-work__item:last-child {
+  margin-right: 0px;
 }
 
 .our-work__text {
