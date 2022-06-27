@@ -205,15 +205,24 @@
                             <h2 class="our-work__title">Чем мы занимаемся</h2>
                             <ul class="our-work__list">
                                 <li class="our-work__item">
-                                    <img src="./image/image.jpg/написание кода.jpg" alt="написание кода1" width="370" height="294" class="our-work-img">
+                                    <img 
+                                     srcset="./image/our-work.jpg/desc.jpg 1x, ./image/our-work.jpg/desc@2.jpg 2x"
+                                     src="./image/our-work.jpg/desc.jpg" 
+                                     alt="Десктопные приложения" width="370" height="294" class="our-work-img">
                                     <p class="our-work__text">Десктопные приложения</p>
                                 </li>
                                 <li class="our-work__item">
-                                    <img src="./image/image.jpg/мобильная версия.jpg" alt="мобильная версия1" width="370" height="294">
+                                    <img 
+                                     srcset="./image/our-work.jpg/mob.jpg 1x, ./image/our-work.jpg/mob@2.jpg 2x"
+                                     src="./image/our-work.jpg/mob.jpg" 
+                                     alt="Мобильные приложения" width="370" height="294">
                                     <p class="our-work__text">Мобильные приложения </p>
                                 </li>
                                 <li class="our-work__item">
-                                    <img src="./image/image.jpg/графика.jpg" alt="графика1" width="370" height="294">
+                                    <img 
+                                     srcset="./image/our-work.jpg/dys.jpg 1x, ./image/our-work.jpg/dys@2.jpg 2x" 
+                                     src="./image/our-work.jpg/dys.jpg" 
+                                     alt="Дизайнерские решения" width="370" height="294">
                                     <p class="our-work__text">Дизайнерские решения</p>
                                 </li>
                             </ul>
@@ -224,59 +233,29 @@
                         <div class="team__container container">
                             <h2 class="team__title">Наша команда</h2>
                             <ul class="team__list">
+                                
                                 <li class="team__item">
-                                    <img src="./image/img-teem.jpg/Ольга Репина.jpg" alt="Ольга Репина" width="270" height="260">              
-                                    <div class="team__member-group">
-                                        <h3 class="team__desc">Ольга Репина</h3>
-                                        <p class="team__text">Frontend Developer</p>
-                                        <ul class="socials list">
-                                            <li class="socials__item">
-                                                <a class="socials__link link" 
-                                                href="" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                aria-label="иконка Instagram">
-                                                <svg class="socials__icon" width="20" height="20" fill="currentcolor">
-                                                    <use href="./image/sprite.svg#instagram"></use>
-                                                </svg></a>
-                                            </li>
-                                            <li class="socials__item">
-                                                <a class="socials__link link" 
-                                                href="" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                aria-label="иконка Twitter">
-                                                <svg class="socials__icon" width="20" height="20" fill="currentcolor">
-                                                    <use href="./image/sprite.svg#twitter"></use>
-                                                </svg></a>
-                                            </li>
-                                            <li class="socials__item">
-                                                <a class="socials__link link" 
-                                                href="" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                aria-label="">
-                                                <svg class="socials__icon" иконка Facebook width="20" height="20" fill="currentcolor">
-                                                    <use href="./image/sprite.svg#facebook"></use>
-                                                </svg>
-                                                </a>
-                                            </li>
-                                            <li class="socials__item">
-                                                <a class="socials__link link" 
-                                                href="" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                aria-label="иконка Linkedin">
-                                                <svg class="socials__icon" width="20" height="20" fill="currentcolor">
-                                                    <use href="./image/sprite.svg#linkedin"></use>
-                                                </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="team__item">
-                                    <img src="./image/img-teem.jpg/Игорь Демьяненко.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                                    <picture>
+                                        <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                          ./image/img-teem.jpg/igor-lt.jpg 1x,
+                                          ./image/img-teem.jpg/igor@2x-lt.jpg 2x"
+                                        type="image/jpg"/>
+
+                                        <source media="(min-width: 768px)" 
+                                        srcset="
+                                          ./image/img-teem.jpg/igor-md.jpg 1x,
+                                          ./image/img-teem.jpg/igor@2x-md.jpg 2x" 
+                                        type="image/jpg" />
+
+                                        <img 
+                                        class="teem-img"
+                                        src="./image/img-teem.jpg/igor-sm.jpg" 
+                                        alt="Игорь Демьяненко" 
+                                        width="270" 
+                                        height="260">
+                                    </picture>
                                     <div class="team__member-group">
                                         <h3 class="team__desc">Игорь Демьяненко</h3>
                                         <p class="team__text">Product Designer</p>
@@ -328,8 +307,102 @@
                                         </ul>
                                     </div>                               
                                 </li>
+
                                 <li class="team__item">
-                                    <img src="./image/img-teem.jpg/Николай Тарасов.jpg" alt="Николай Тарасов" width="270" height="260">
+                                    <picture>
+                                        <source 
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                         ./image/img-teem.jpg/olga-lt.jpg 1x,
+                                         ./image/img-teem.jpg/olga@2x-lt.jpg 2x"
+                                        type="image/jpg"/>
+
+                                        <source 
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                         ./image/img-teem.jpg/olga-md.jpg 1x,
+                                         ./image/img-teem.jpg/olga@2x-md.jpg 2x"
+                                        type="image/jpg"/>
+                                        <img 
+                                        class="teem-img"
+                                        src="./image/img-teem.jpg/olga-sm.jpg" 
+                                        alt="Ольга Репина" 
+                                        width="270" 
+                                        height="260"> 
+                                    </picture>             
+                                    <div class="team__member-group">
+                                        <h3 class="team__desc">Ольга Репина</h3>
+                                        <p class="team__text">Frontend Developer</p>
+                                        <ul class="socials list">
+                                            <li class="socials__item">
+                                                <a class="socials__link link" 
+                                                href="" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                aria-label="иконка Instagram">
+                                                <svg class="socials__icon" width="20" height="20" fill="currentcolor">
+                                                    <use href="./image/sprite.svg#instagram"></use>
+                                                </svg></a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a class="socials__link link" 
+                                                href="" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                aria-label="иконка Twitter">
+                                                <svg class="socials__icon" width="20" height="20" fill="currentcolor">
+                                                    <use href="./image/sprite.svg#twitter"></use>
+                                                </svg></a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a class="socials__link link" 
+                                                href="" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                aria-label="">
+                                                <svg class="socials__icon" иконка Facebook width="20" height="20" fill="currentcolor">
+                                                    <use href="./image/sprite.svg#facebook"></use>
+                                                </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a class="socials__link link" 
+                                                href="" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                aria-label="иконка Linkedin">
+                                                <svg class="socials__icon" width="20" height="20" fill="currentcolor">
+                                                    <use href="./image/sprite.svg#linkedin"></use>
+                                                </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="team__item">
+                                    <picture>
+                                        <source 
+                                        media="(min-width: 1200px)" 
+                                        srcset="
+                                         ./image/img-teem.jpg/nik-lt.jpg 1x,
+                                         ./image/img-teem.jpg/nik@2x-lt.jpg 2x" 
+                                        type="image/jpg" />
+                                        
+                                        <source 
+                                        media="(min-width: 768px)" 
+                                        srcset=" 
+                                         ./image/img-teem.jpg/nik-md.jpg 1x,
+                                         ./image/img-teem.jpg/nik@2x-md.jpg 2x" 
+                                        type="image/jpg" />
+                                        <img 
+                                        class="teem-img"
+                                        srcset=""
+                                        src="./image/img-teem.jpg/nik-sm.jpg" 
+                                        alt="Николай Тарасов" 
+                                        width="270" 
+                                        height="260">
+                                    </picture>
                                         <div class="team__member-group">
                                             <h3 class="team__desc">Николай Тарасов</h3>
                                             <p class="team__text">Marketing</p>
@@ -381,8 +454,28 @@
                                             </ul>
                                         </div>
                                 </li>
+
                                 <li class="team__item">
-                                    <img src="./image/img-teem.jpg/Михаил Ермаков.jpg" alt="Михаил Ермаков" width="270" height="260">
+                                    <picture>
+                                        <source 
+                                         media="(min-width: 1200px" 
+                                         srcset="
+                                          ./image/img-teem.jpg/max-lt.jpg 1x,
+                                          ./image/img-teem.jpg/max@2x-lt.jpg 2x" 
+                                         type="image/jpg" />
+                                        
+                                        <source 
+                                         media="(min-width: 768px)" 
+                                         srcset="
+                                          ./image/img-teem.jpg/max-md.jpg 1x,
+                                          ./image/img-teem.jpg/max@2x-md.jpg 2x" 
+                                         type="image/jpg" />
+                                        <img 
+                                         class="teem-img"
+                                         srcset=""
+                                         src="./image/img-teem.jpg/max-sm.jpg" 
+                                         alt="Михаил Ермаков" width="270" height="260">
+                                    </picture>
                                     <div class="team__member-group">
                                         <h3 class="team__desc">Михаил Ермаков</h3>
                                         <p class="team__text">UI Designer</p>
@@ -434,6 +527,7 @@
                                         </ul>
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
                     </section>

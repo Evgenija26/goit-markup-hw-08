@@ -749,7 +749,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  visibility: hidden;
   margin: 0;
   padding: 0;
   background-color: transparent;
