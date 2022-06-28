@@ -205,24 +205,46 @@
                             <h2 class="our-work__title">Чем мы занимаемся</h2>
                             <ul class="our-work__list">
                                 <li class="our-work__item">
-                                    <img 
-                                     srcset="./image/our-work.jpg/desc.jpg 1x, ./image/our-work.jpg/desc@2.jpg 2x"
-                                     src="./image/our-work.jpg/desc.jpg" 
-                                     alt="Десктопные приложения" width="370" height="294" class="our-work-img">
+                                    <picture>
+                                     <source 
+                                     media="(min-width: 1200px)" 
+                                     srcset="
+                                      ./image/our-work.jpg/desc.jpg 1x, 
+                                      ./image/our-work.jpg/desc@2x.jpg 2x" 
+                                     type="image/jpg">
+                                     <img
+                                      src="./image/our-work.jpg/desc.jpg" 
+                                      alt="Десктопные приложения" width="370" height="294" class="our-work-img">
+                                    </picture>
                                     <p class="our-work__text">Десктопные приложения</p>
                                 </li>
                                 <li class="our-work__item">
+                                    <picture>
+                                     <source 
+                                      media="(min-width: 1200px)" 
+                                      srcset="
+                                      ./image/our-work.jpg/mob.jpg 1x, 
+                                      ./image/our-work.jpg/mob@2x.jpg 2x" 
+                                      type="image/jpg">
                                     <img 
-                                     srcset="./image/our-work.jpg/mob.jpg 1x, ./image/our-work.jpg/mob@2.jpg 2x"
                                      src="./image/our-work.jpg/mob.jpg" 
                                      alt="Мобильные приложения" width="370" height="294">
+                                    </picture>
                                     <p class="our-work__text">Мобильные приложения </p>
                                 </li>
                                 <li class="our-work__item">
+                                    <picture>
+                                    <source 
+                                     media="(min-width: 1200px)" 
+                                     srcset="
+                                     ./image/our-work.jpg/dys.jpg 1x, 
+                                     ./image/our-work.jpg/dys@2x.jpg 2x" 
+                                     type="image/jpg">
                                     <img 
-                                     srcset="./image/our-work.jpg/dys.jpg 1x, ./image/our-work.jpg/dys@2.jpg 2x" 
+                                     srcset="" 
                                      src="./image/our-work.jpg/dys.jpg" 
                                      alt="Дизайнерские решения" width="370" height="294">
+                                    </picture>
                                     <p class="our-work__text">Дизайнерские решения</p>
                                 </li>
                             </ul>
