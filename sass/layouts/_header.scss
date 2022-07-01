@@ -26,17 +26,18 @@
     margin-left: auto;
     margin-right: auto;
     
-    @media screen and(max-width: 768px){
-        display: none;
-    }
-
-    @media screen and (min-width: 480px){
+    @media screen and(max-width: 767.98px){
         display: none;
     }
 
     @media screen and (min-width: 768px){
         display: block;
     }
+
+    // @media screen and (min-width: 480px){
+    //     display: none;
+    // }
+
 }
 
 .nav__list {
@@ -62,15 +63,22 @@
 
 .nav__link {
     color: var(--main-txt-cl);
-    padding-bottom: 32px;
-    padding-top: 32px;
-    cursor: pointer;
+    
     line-height: 4px;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and(min-width: 1200px){
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    @media screen and(max-width:1199.98px){
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
 
     &:hover,
     &:focus {
@@ -123,7 +131,7 @@
         
     }
 
-    @media screen and(min-width: 768px) and( max-width:1199px){
+    @media screen and(min-width: 768px) and( max-width:1199.98px){
         display: block;
         margin-right: 15px;
     }
@@ -144,12 +152,9 @@
         margin-left: 50px;
         display: inline-block;
         align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
-
-    @media screen and(min-width: 768px){
-        
-    }
-
     
     &:hover,
     &:focus {
@@ -166,6 +171,8 @@
     letter-spacing: 0.02em;
     align-items: center;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -173,11 +180,7 @@
 
     color: var(--secondary-txt-cl);
 
-    @media screen and(min-width:1200px){
-        padding-top: 32px;
-        padding-bottom: 32px;
-        
-    }
+    
 
     &:hover,
     &:focus {
@@ -186,20 +189,31 @@
 }
 
 .header__mail{
+
     @media screen and( min-width: 768px){
      padding-top: 20px;   
     }   
+
+    @media screen and( min-width:1200px){
+        padding-top: 0;
+    }
 }
 
 .header__tel{
+
     @media screen and(min-width: 768px) {
         padding-bottom: 20px;
+    }
+
+    @media screen and(min-width:1200px){
+        padding-bottom: 0;
     }
 }
 
 .studio-icon {
     margin-right: 10px;
     align-items: baseline;
+    fill: currentColor;
 
     &:hover,
     &:focus{

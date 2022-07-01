@@ -10,6 +10,7 @@
      
     }
 
+
     @media screen and(min-width:768px) {
         
         text-align: center;
@@ -78,6 +79,8 @@
     }
 }
 
+
+
 .socials__icon-footer {
     fill: currentColor;
     fill: var(--white);
@@ -85,7 +88,7 @@
     
     &:hover,
     &:focus{
-    color: #ffffff;
+    // color: #ffffff;
     background-color: var(--accent-cl);
 }
 }

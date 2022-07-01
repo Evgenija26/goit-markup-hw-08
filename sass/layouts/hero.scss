@@ -12,6 +12,7 @@
     //     url(../image/background.jpg/bg-hero.png);
 
     @media screen and(min-width: 480px){
+        
         background-image: url(../image/bghero.jpg/background.jpg/Header.img-sm.jpg),
          linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
@@ -24,6 +25,7 @@
     }
     
     @media screen and(min-width: 768px){
+       
         background-image: url(../image/bghero.jpg/background.jpg/Header.img-md.jpg),
          linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
@@ -36,6 +38,7 @@
     }
     
     @media screen and(min-width: 1200px){
+        
         background-image: 
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
          url(../image/bghero.jpg/background.jpg/header.Img.jpg);
@@ -59,8 +62,21 @@
 .hero__container {
     margin-left: auto;
     margin-right: auto;
-    
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
     text-align: center;
+
+    @media screen and(max-width:767.98px){
+        height: 400px;
+    }
+
+    @media screen and(min-width:1200px){
+        height: 600px;
+    }
 
 }
 

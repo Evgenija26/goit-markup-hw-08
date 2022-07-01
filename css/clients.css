@@ -31,7 +31,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  margin-bottom: 30px;
 }
 @media screen and (max-width: 1200px) {
   .clients__titel {
@@ -72,10 +71,10 @@
       flex-basis: calc((100% - 60px) / 2);
   height: 92px;
   margin: 15px;
-  -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-  transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
-  transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
-  transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
+  -webkit-transition: color border 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
+  transition: color border 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
+  transition: color border 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+  transition: color border 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -33,7 +33,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 30px;
+    
 
     @media screen and(max-width:1200px) {
         margin-bottom: 50px;
@@ -62,7 +62,7 @@
     height: 92px;
     margin: 15px;
 
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    transition: color border 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 

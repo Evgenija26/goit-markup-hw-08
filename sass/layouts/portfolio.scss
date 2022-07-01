@@ -5,20 +5,23 @@
 .portfolio__section {
     background: var(--white);
 
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
 
+    @media screen and(max-width:480px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
     @media screen and(min-width:768px){
         padding-top: 66px;
         padding-bottom: 60px;
     }
-
-    @media screen and(max-width:480px){
-        padding-top: 60px;
-        padding-bottom: 60px;
+    @media screen and(min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
@@ -27,17 +30,17 @@
     display: flex;
     flex-wrap: wrap;
     
-  
-    @media screen and(min-width: 1200px) {
-        
-        justify-content: center;
-    }  
-
     @media screen and(min-width: 768px){
         
         justify-content: center;
+
     }
 
+    @media screen and(min-width: 1200px) {
+        
+        justify-content: center;
+        margin-bottom: 50px;
+    }  
 }
 
 .portfolio__item {
@@ -52,7 +55,7 @@
     }
 }
 
-.portfolio__btn {
+.portfolio__btn{
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -83,6 +86,15 @@
     }
 }
 
+.portfolio__box-all{
+    color: var(--white);
+        background-color: var(--accent-cl);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+}
+
 /*============================*/
 /*Projects*/
 /*============================*/
@@ -92,13 +104,10 @@
     flex-wrap: wrap;
     margin: -15px;
     list-style: none;
-    
-    @media screen and(min-width:1200px){
-        margin-top: 50px;
-    }
+
 
     @media screen and(max-width:1199px){
-        justify-content: center;
+    
         margin-top: 30px;
     }
 }
@@ -117,6 +126,7 @@
         flex-basis: calc((100% - 3 * 30px) / 3);
        
     }
+
     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl),
         box-shadow 250ms var(--accent-cl);
     transition-duration: 250ms;
@@ -177,14 +187,17 @@
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
 
-    @media screen and(min-width: 1200px){
-        width: 370px;
+    @media screen and(max-width:767.98px){
+        width: 100%;
     }
 
     @media screen and(min-width: 768px){
         width: 354px;
     }
-        
+    
+    @media screen and(min-width: 1200px){
+        width: 370px;
+    }    
 }
 
 
