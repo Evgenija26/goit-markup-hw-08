@@ -149,7 +149,7 @@
 
 .header__contact-item {
     @media screen and(min-width: 1200px) {
-        margin-left: 50px;
+        margin-left: 30px;
         display: inline-block;
         align-items: center;
         padding-top: 32px;
@@ -191,11 +191,13 @@
 .header__mail{
 
     @media screen and( min-width: 768px){
-     padding-top: 20px;   
+     padding-top: 20px; 
+     padding-bottom: 10px;  
     }   
 
     @media screen and( min-width:1200px){
         padding-top: 0;
+        padding-bottom: 0;
     }
 }
 

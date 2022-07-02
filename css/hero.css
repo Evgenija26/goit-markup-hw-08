@@ -10,13 +10,13 @@
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .hero {
     background-image: url(../image/bghero.jpg/background.jpg/Header.img-sm.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url(../image/bghero.jpg/background.jpg/Header.img-sm.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../image/bghero.jpg/background.jpg/Header.img@2x-sm.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url(../image/bghero.jpg/background.jpg/Header.img@2x-sm.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));

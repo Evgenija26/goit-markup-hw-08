@@ -8,6 +8,14 @@
 }
 
 .footer__container {
+    
+
+    @media screen and(min-width:768px){
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     @media screen and(min-width: 1200px) {
             align-items: baseline;
             display: flex;
@@ -44,7 +52,7 @@
 
 .footer__list-container {
     
-    @media screen and(max-width:768px){
+    @media screen and(max-width:767.98px){
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -61,6 +69,7 @@
     @media screen and(min-width:1200px) {
         margin-right: 70px;
         text-align: left;
+        margin-left: 0px;
     }
 }
 

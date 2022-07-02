@@ -120,7 +120,6 @@
 .portfolio__projects-item {
   margin: 15px;
   background: var(--white);
-  position: relative;
   -webkit-transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
   transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), -webkit-box-shadow 250ms var(--accent-cl);
   transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
@@ -129,13 +128,6 @@
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio__projects-item:hover, .portfolio__projects-item:focus .portfolio__projects-tagline {
-  background: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translatey(0);
-          transform: translatey(0);
-  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 @media screen and (min-width: 768px) {
   .portfolio__projects-item {
@@ -174,16 +166,20 @@
 
 .portfolio__projects-tagline {
   display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
+  height: 100%;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
 }
-.portfolio__projects-tagline:hover .overlay {
-  background: rgba(33, 150, 243, 0.9);
+.portfolio__projects-tagline:hover, .portfolio__projects-tagline:focus .overlay {
   -webkit-transform: translatey(0);
           transform: translatey(0);
   -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -195,6 +191,9 @@
   margin-left: auto;
   margin-right: auto;
   background: rgba(33, 150, 243, 0.9);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   overflow: hidden;
 }
 @media screen and (max-width: 767.98px) {

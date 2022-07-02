@@ -27,6 +27,7 @@
     @media screen and(min-width:768px) {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 60px;
         
 
     }
@@ -38,7 +39,7 @@
         }
 
     @media screen and(max-width:1199px){
-        margin-top: 60px;
+
         text-align: center;
     }
 
@@ -46,7 +47,7 @@
             
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 60px;
+ 
         
         }
 
@@ -98,7 +99,7 @@
 
 .footer__subscribe-form{
     
-    @media screen and(max-width:768px) {
+    @media screen and(max-width:767.98px) {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
