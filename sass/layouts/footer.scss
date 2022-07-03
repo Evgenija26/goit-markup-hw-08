@@ -12,8 +12,7 @@
 
     @media screen and(min-width: 768px) and(max-width: 1199.98px){
         justify-content: space-around;
-        display: flex;
-        flex-wrap: wrap;
+    
     }
 
     @media screen and(min-width: 1200px) {
@@ -32,9 +31,10 @@
 
     @media screen and(min-width: 768px) {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
+        flex-wrap: wrap;
+        
     }
     
     @media screen and(min-width: 1200px) {

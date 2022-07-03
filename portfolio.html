@@ -460,61 +460,67 @@
                 <!-- Footer -->
             <footer class="footer">
                 <div class="footer__container container">
-                    <!-- WebStudio -->
-                    <div class=" footer__list-container">
-                        <a href="./index.html" class="logo footer__logo"><span class="web">Web</span>Studio</a>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-                            </li>
-                            <li class="footer__item ">
-                                <a href="mailto:info@devstudio.com" color="mailto:info@devstudio.com"
-                                    class="footer__contakt">@devstudio.com</a>
-                            </li>
-                            <li class="footer__item ">
-                                <a href="tel:+380961111111" color="tel:+380961111111" class="footer__contakt">+380961111111</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__socials-container">
-                        <p class="footer__socials-title">присоединяйтесь</p>
-                        <ul class="socials list">
-                            <li class="socials__item">
-                                <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="иконка Instagram">
-                                    <svg class="socials__icon-footer" width="20" height="20">
-                                        <use href="./image/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="иконка Twitter">
-                                    <svg class="socials__icon-footer" width="20" height="20" fill=currentColor>
-                                        <use href="./image/sprite.svg#twitter"></use>
-                                    </svg></a>
-                            </li>
-                            <li class="socials__item">
-                                <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="иконка Facebook">
-                                    <svg class="socials__icon-footer" width="20" height="20">
-                                        <use href="./image/sprite.svg#facebook"></use>
-                                    </svg></a>
-                            </li>
-                            <li class="socials__item">
-                                <a class="socials__link link" href="" rel="noopener noreferrer" aria-label="иконка Linkedin">
-                                    <svg class="socials__icon-footer" width="20" height="20">
-                                        <use href="./image/sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="footer__blok">
+                        <!-- WebStudio -->
+                        <div class=" footer__list-container">
+                            <a href="./index.html" class="logo footer__logo"><span class="web">Web</span>Studio</a>
+                            <address class="footer__address">
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        г. Киев, пр-т Леси Украинки, 26
+                                    </li>
+                                    <li class="footer__item ">
+                                        <a href="mailto:info@devstudio.com" color="mailto:info@devstudio.com"
+                                            class="footer__contakt">@devstudio.com</a>
+                                    </li>
+                                    <li class="footer__item ">
+                                        <a href="tel:+380961111111" color="tel:+380961111111"
+                                            class="footer__contakt">+380961111111</a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                        <div class="footer__socials-container">
+                            <p class="footer__socials-title">присоединяйтесь</p>
+                            <ul class="socials list">
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link-footer link" href="" target="_blank"
+                                        rel="noopener noreferrer" aria-label="иконка Instagram">
+                                        <svg class="socials__icon-footer" width="20" height="20">
+                                            <use href="./image/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link-footer link" href="" target="_blank"
+                                        rel="noopener noreferrer" aria-label="иконка Twitter">
+                                        <svg class="socials__icon-footer" width="20" height="20" fill=currentColor>
+                                            <use href="./image/sprite.svg#twitter"></use>
+                                        </svg></a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link-footer link" href="" target="_blank"
+                                        rel="noopener noreferrer" aria-label="иконка Facebook">
+                                        <svg class="socials__icon-footer" width="20" height="20">
+                                            <use href="./image/sprite.svg#facebook"></use>
+                                        </svg></a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link-footer link" href="" rel="noopener noreferrer"
+                                        aria-label="иконка Linkedin">
+                                        <svg class="socials__icon-footer" width="20" height="20">
+                                            <use href="./image/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer__subscribe-box">
                         <p class="footer__label-text">Подпишитесь на рассылку</p>
                         <form class="footer__subscribe-form">
-                            <input class="input" type="email" name="mail" placeholder="E-mail" />
-                            <button class="btn" type="submit">
+                            <input class="input footer__imput" type="email" name="mail" placeholder="E-mail" />
+                            <button class="btn footer__btn" type="submit">
                                 Подписаться
                                 <svg class="icon" width="24" height="24">
                                     <use href="./image/sprite.svg#icon-send"></use>
