@@ -86,6 +86,15 @@
     }
 }
 
+.portfolio__btn-all{
+    color: var(--white);
+        background-color: var(--accent-cl);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+}
+
 .portfolio__box-all{
     color: var(--white);
         background-color: var(--accent-cl);
@@ -105,6 +114,9 @@
     margin: -15px;
     list-style: none;
 
+    @media screen and(max-width: 767.98px){
+        justify-content: center;
+    }
 
     @media screen and(max-width:1199px){
     

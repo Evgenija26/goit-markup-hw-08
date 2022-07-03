@@ -807,6 +807,19 @@ img {
   margin-top: auto;
 }
 
+.mob-menu__item {
+  font-family: var(--main-txt-cl);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mob-menu__link--current {
   color: var(--accent-cl);
 }
@@ -822,6 +835,9 @@ img {
   color: var(--main-txt-cl);
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+.mob-menu__link:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mob-menu__link-mob {
@@ -856,11 +872,20 @@ img {
 }
 
 .mob-menu__link-soc {
-  font-size: 18px;
+  font-family: var(--main-txt-cl);
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.22;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent-cl);
+}
+.mob-menu__link-soc:nth-child(-n+3)::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 0 10px;
 }
 
 /*============================*/
@@ -1459,6 +1484,22 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .teem-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .teem-img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teem-img {
+    width: 270px;
+  }
+}
+
 .team__member-group {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1720,6 +1761,14 @@ img {
   border-radius: 4px;
 }
 
+.portfolio__btn-all {
+  color: var(--white);
+  background-color: var(--accent-cl);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .portfolio__box-all {
   color: var(--white);
   background-color: var(--accent-cl);
@@ -1739,6 +1788,13 @@ img {
       flex-wrap: wrap;
   margin: -15px;
   list-style: none;
+}
+@media screen and (max-width: 767.98px) {
+  .portfolio__projects-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (max-width: 1199px) {
   .portfolio__projects-list {
@@ -1930,7 +1986,7 @@ img {
   padding: 60px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
