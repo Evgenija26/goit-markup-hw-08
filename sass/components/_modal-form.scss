@@ -191,7 +191,7 @@
 
 .modal .confirm {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -222,6 +222,7 @@
 }
 
 .modal .custom-checkbox {
+
     width: 16px;
     height: 15px;
     display: flex;
@@ -254,6 +255,7 @@
 
 .modal .link-checkbox {
     color: var(--accent-cl);
+    
 }
 
 .modal .form .btn {

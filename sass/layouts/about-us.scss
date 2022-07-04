@@ -21,11 +21,18 @@
 }
 
 .about-us__list {
-    display: flex;
+    
     flex-wrap: wrap;
     
     margin: -15px;
 
+    @media screen and(min-width: 768px){
+        display: flex;
+    }
+
+    @media screen and(min-width: 768px) {
+        display: flex;
+    }
 }
 
 .about-us__item{

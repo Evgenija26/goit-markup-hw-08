@@ -178,6 +178,11 @@
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
 }
+@media screen and (max-width: 479.98px) {
+  .portfolio__projects-desc {
+    width: 402px;
+  }
+}
 
 .portfolio__projects-tagline {
   display: block;

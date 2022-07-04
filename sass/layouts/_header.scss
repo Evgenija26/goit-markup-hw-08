@@ -1,7 +1,3 @@
-/*============================*/
-/* Header*/
-/*============================*/
-
 .header,
 .top-line {
     border-bottom: 1px solid #ECECEC;
@@ -16,16 +12,9 @@
     background: var(--white);
 }
 
-/*============================*/
-/* menu nav*/
-/*============================*/
-
-.nav {
-    display: flex;
+.nav {   
     align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
-    
+      
     @media screen and(max-width: 767.98px){
         display: none;
     }
@@ -33,17 +22,10 @@
     @media screen and (min-width: 768px){
         display: block;
     }
-
-    // @media screen and (min-width: 480px){
-    //     display: none;
-    // }
-
 }
 
 .nav__list {
-    
     display: flex;
-
     text-align: center;
 }
 
@@ -107,18 +89,7 @@
     }
 }
 
-/*================================*/
-/* телефон, e-mail в шапке*/
-/*================================*/
-
-// .header__contact-list {
-//     display: block;
-//     display: flex;
-//     margin-left: auto;
-// }
-
 .header__contact-list {
-
 
     @media screen and(min-width: 1200px){
         display: flex;
@@ -127,13 +98,11 @@
     }
 
     @media screen and(max-width:767px){
-        display: none;
-        
+        display: none; 
     }
 
     @media screen and(min-width: 768px) and( max-width:1199.98px){
         display: block;
-        margin-right: 15px;
     }
     }
 
@@ -152,8 +121,7 @@
         margin-left: 30px;
         display: inline-block;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        
     }
     
     &:hover,
@@ -180,8 +148,6 @@
 
     color: var(--secondary-txt-cl);
 
-    
-
     &:hover,
     &:focus {
         color: var(--accent-cl);
@@ -190,26 +156,23 @@
 
 .header__mail{
 
-    @media screen and( min-width: 768px){
+    @media screen and( max-width: 1199.98px){
      padding-top: 20px; 
-     padding-bottom: 10px;  
+     margin-bottom: 10px;  
     }   
 
     @media screen and( min-width:1200px){
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
 .header__tel{
 
-    @media screen and(min-width: 768px) {
+    @media screen and(max-width: 1199.98px) {
         padding-bottom: 20px;
     }
 
-    @media screen and(min-width:1200px){
-        padding-bottom: 0;
-    }
 }
 
 .studio-icon {

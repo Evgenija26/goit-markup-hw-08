@@ -1,9 +1,8 @@
 .header__logo-top-line {
     display: block;
     
-    
     @media screen and(max-width: 1199px){
-        margin-left: 15px;
+        margin-right: 88px;
     }
 
     @media screen and(min-width: 1200px) {
@@ -20,8 +19,6 @@
 
     color: var(--main-txt-cl);
     text-decoration: none;
-
-
 }
 
 .web {

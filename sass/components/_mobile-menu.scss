@@ -72,6 +72,7 @@
     line-height: 47px;
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
+    
 
         &:not(:last-child) {
             margin-bottom: 32px;
@@ -93,20 +94,23 @@
     color: var(--main-txt-cl);
     line-height: 1.17;
     letter-spacing: 0.02em;
+    text-decoration: none;
     
     &:not(:last-child) {
-                margin-bottom: 32px;
-            }
+        margin-bottom: 32px;
+    }
 }
 
 .mob-menu__link-mob {
     color: var(--accent-cl);
     font-size: 34px;
     line-height: 1.18;
+    text-decoration: none;
 }
 
 .mob-menu__title-cont{
     margin-top: 32px;
+   
 }
 
 .mob-menu__link-cont {
@@ -115,7 +119,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-cl);
-    
+    text-decoration: none;
 }
 
 .mob-menu__social {
@@ -126,6 +130,12 @@
 
 .mob-menu__item-soc{
     margin-right: 20px;
+
+    &:not(:last-child){
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    
+        padding-right: 10px;
+    }
 }
 
 
@@ -137,11 +147,6 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         color: var(--accent-cl);
-    
-        &:nth-child(-n + 3)::after {
-            content: "";
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-            margin: 0 10px;
-        }
+        text-decoration: none;
+
 }
