@@ -411,9 +411,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -422,6 +422,7 @@ img {
 
 .modal .checkbox {
   position: absolute;
+  left: 0px;
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -439,10 +440,11 @@ img {
   border: 0;
 }
 .modal .checkbox:focus + .custom-checkbox {
-  border-color: aqua;
+  border-color: var(--accent-cl);
 }
 
 .modal .custom-checkbox {
+  position: fixed;
   width: 16px;
   height: 15px;
   display: -webkit-box;
@@ -458,7 +460,6 @@ img {
   border-radius: 2px;
   -webkit-transition: var(--modal-transition);
   transition: var(--modal-transition);
-  margin-right: 7px;
   -webkit-transition: background-color 250ms var(--hover-cubic);
   transition: background-color 250ms var(--hover-cubic);
   fill: var(--white);
@@ -473,7 +474,6 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-left: 7px;
   color: var(--text-grey);
 }
 
