@@ -230,12 +230,12 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio__box {
-    width: 100%;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__box {
-    width: 100%;
+    width: 370px;
   }
 }
 
