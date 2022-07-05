@@ -244,6 +244,11 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (max-width: 480px) {
   .modal {
     width: 100%;
@@ -341,21 +346,22 @@ img {
   margin: 0;
 }
 
-.modal .input {
+.input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
   padding-right: 12px;
+  outline: transparent;
   -webkit-transition: border-color 250ms var(--hover-cubic);
   transition: border-color 250ms var(--hover-cubic);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.modal .input:hover, .modal .inputt:focus {
+.input:hover, .input:focus {
   border-color: var(--accent-cl);
   outline: 0px;
 }
-.modal .input:hover + .icon, .modal .input:focus + .icon {
+.input:hover + .icon, .input:focus + .icon {
   fill: var(--accent-cl);
 }
 
@@ -407,16 +413,8 @@ img {
 }
 
 .modal .confirm {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
   margin-bottom: 30px;
 }
 
@@ -444,18 +442,9 @@ img {
 }
 
 .modal .custom-checkbox {
-  position: fixed;
   width: 16px;
   height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: inline-block;
   border: 2px solid var(--black);
   border-radius: 2px;
   -webkit-transition: var(--modal-transition);
@@ -925,8 +914,8 @@ img {
 }
 @media screen and (max-width: 1199.98px) {
   .nav__link {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .nav__link:hover, .nav__link:focus {
@@ -1791,6 +1780,9 @@ img {
   padding: 20px 24px 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio__projects-desc {
@@ -1802,14 +1794,11 @@ img {
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
 }
-@media screen and (max-width: 479.98px) {
-  .portfolio__projects-desc {
-    width: 402px;
-  }
-}
 
 .portfolio__projects-tagline {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1824,6 +1813,7 @@ img {
   color: var(--secondary-txt-cl);
 }
 .portfolio__projects-tagline:hover, .portfolio__projects-tagline:focus .overlay {
+  opacity: 1;
   -webkit-transform: translatey(0);
           transform: translatey(0);
   -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -1835,9 +1825,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   background: rgba(33, 150, 243, 0.9);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   overflow: hidden;
 }
 .portfolio__box:hover .overlay {
@@ -1854,7 +1841,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .portfolio__box {
-    width: 354px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1892,6 +1879,7 @@ img {
   width: 100%;
   height: 100%;
   color: var(--white);
+  opacity: 0;
   padding-left: 24px;
   padding-right: 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -1903,10 +1891,10 @@ img {
           transform: translate(0);
   -webkit-transform: translatey(101%);
           transform: translatey(101%);
-  -webkit-transition: -webkit-transform 250ms ease color var(--accent-cl);
-  transition: -webkit-transform 250ms ease color var(--accent-cl);
-  transition: transform 250ms ease color var(--accent-cl);
-  transition: transform 250ms ease color var(--accent-cl), -webkit-transform 250ms ease color var(--accent-cl);
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: transform, opacity;
+  transition: transform, opacity, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

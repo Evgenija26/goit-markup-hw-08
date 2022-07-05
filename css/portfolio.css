@@ -167,6 +167,9 @@
   padding: 20px 24px 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio__projects-desc {
@@ -178,14 +181,11 @@
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
 }
-@media screen and (max-width: 479.98px) {
-  .portfolio__projects-desc {
-    width: 402px;
-  }
-}
 
 .portfolio__projects-tagline {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -200,6 +200,7 @@
   color: var(--secondary-txt-cl);
 }
 .portfolio__projects-tagline:hover, .portfolio__projects-tagline:focus .overlay {
+  opacity: 1;
   -webkit-transform: translatey(0);
           transform: translatey(0);
   -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -211,9 +212,6 @@
   margin-left: auto;
   margin-right: auto;
   background: rgba(33, 150, 243, 0.9);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   overflow: hidden;
 }
 .portfolio__box:hover .overlay {
@@ -230,7 +228,7 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio__box {
-    width: 354px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -268,6 +266,7 @@
   width: 100%;
   height: 100%;
   color: var(--white);
+  opacity: 0;
   padding-left: 24px;
   padding-right: 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -279,10 +278,10 @@
           transform: translate(0);
   -webkit-transform: translatey(101%);
           transform: translatey(101%);
-  -webkit-transition: -webkit-transform 250ms ease color var(--accent-cl);
-  transition: -webkit-transform 250ms ease color var(--accent-cl);
-  transition: transform 250ms ease color var(--accent-cl);
-  transition: transform 250ms ease color var(--accent-cl), -webkit-transform 250ms ease color var(--accent-cl);
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: transform, opacity;
+  transition: transform, opacity, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
