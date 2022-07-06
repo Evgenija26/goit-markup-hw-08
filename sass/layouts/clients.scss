@@ -27,7 +27,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin: 0 auto;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -35,7 +35,7 @@
     line-height: 42px;
     
 
-    @media screen and(max-width:1200px) {
+    @media screen and(min-width:1200px) {
         margin-bottom: 50px;
     }
     

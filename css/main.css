@@ -500,7 +500,6 @@ img {
   background-color: #188CE8;
 }
 
-/* ПОДПИШИСЬ */
 .subscribe-box .label {
   width: 570px;
 }
@@ -533,7 +532,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__subscribe-box {
-    margin-left: auto;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -556,6 +554,7 @@ img {
   display: block;
   padding: 15px 16px;
   width: 358px;
+  height: 50px;
   margin-right: 12px;
   -webkit-transition: border-color 250ms var(--hover-cubic);
   transition: border-color 250ms var(--hover-cubic);
@@ -984,6 +983,14 @@ img {
             align-items: center;
   }
 }
+@media screen and (max-width: 1199.98px) {
+  .header__contact-item {
+    margin-bottom: 10px;
+  }
+  .header__contact-item:last-child {
+    margin-bottom: 0px;
+  }
+}
 .header__contact-item:hover, .header__contact-item:focus {
   color: var(--accent-cl);
 }
@@ -1018,7 +1025,6 @@ img {
 @media screen and (max-width: 1199.98px) {
   .header__mail {
     padding-top: 20px;
-    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1507,14 +1513,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
-  margin: 0 auto;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients__titel {
     margin-bottom: 50px;
   }
@@ -1829,7 +1834,7 @@ img {
   background: rgba(33, 150, 243, 0.9);
   overflow: hidden;
 }
-.portfolio__box:hover, .portfolio__box:focus .overlay {
+.portfolio__box:hover .overlay {
   opacity: 1;
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translatey(0);
@@ -1849,7 +1854,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__box {
-    width: 370px;
+    width: 100%;
   }
 }
 
@@ -1951,6 +1956,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: auto;
   }
 }
 
