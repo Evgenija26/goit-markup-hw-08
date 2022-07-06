@@ -107,9 +107,6 @@
   border-radius: 4px;
 }
 
-/*============================*/
-/*Projects*/
-/*============================*/
 .portfolio__projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,7 +155,8 @@
         flex-basis: calc((100% - 90px) / 3);
   }
 }
-.portfolio__projects-item:hover, .portfolio__projects-item:focus {
+.portfolio__projects-item:hover, .portfolio__projects-item:focus .overlay {
+  opacity: 1;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -214,12 +212,11 @@
   background: rgba(33, 150, 243, 0.9);
   overflow: hidden;
 }
-.portfolio__box:hover .overlay {
+.portfolio__box:hover, .portfolio__box:focus .overlay {
+  opacity: 1;
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translatey(0);
           transform: translatey(0);
-  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 @media screen and (max-width: 767.98px) {
   .portfolio__box {
@@ -270,21 +267,15 @@
   padding-left: 24px;
   padding-right: 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition: -webkit-transform 250ms var(--hover-cubic);
-  transition: -webkit-transform 250ms var(--hover-cubic);
-  transition: transform 250ms var(--hover-cubic);
-  transition: transform 250ms var(--hover-cubic), -webkit-transform 250ms var(--hover-cubic);
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  overflow: auto;
   -webkit-transform: translatey(101%);
           transform: translatey(101%);
-  -webkit-transition: opacity, -webkit-transform;
-  transition: opacity, -webkit-transform;
-  transition: transform, opacity;
-  transition: transform, opacity, -webkit-transform;
+  -webkit-transition: opacity, -webkit-transform 250ms ease color var(--accent-cl);
+  transition: opacity, -webkit-transform 250ms ease color var(--accent-cl);
+  transition: transform 250ms ease color var(--accent-cl), opacity;
+  transition: transform 250ms ease color var(--accent-cl), opacity, -webkit-transform 250ms ease color var(--accent-cl);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto;
 }/*# sourceMappingURL=portfolio.css.map */

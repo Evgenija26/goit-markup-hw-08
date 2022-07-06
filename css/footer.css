@@ -117,7 +117,7 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .footer__socials-container {
     text-align: center;
     margin-left: auto;

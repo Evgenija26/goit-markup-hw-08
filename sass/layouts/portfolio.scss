@@ -104,9 +104,6 @@
         border-radius: 4px;
 }
 
-/*============================*/
-/*Projects*/
-/*============================*/
 
 .portfolio__projects-list {
     display: flex;
@@ -146,8 +143,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
-    &:focus {
-        
+    &:focus .overlay{
+        opacity: 1;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -198,7 +195,8 @@
             transform: translatey(0);
             box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9),
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        }
+            
+            }
 
 
 }
@@ -212,11 +210,12 @@
     
     overflow: hidden;
 
-    &:hover .overlay {
+    &:hover,
+    &:focus .overlay {
+        opacity: 1;
             background: rgba(33, 150, 243, 0.9);
             transform: translatey(0);
-            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9),
-                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
         }
 
     @media screen and(max-width:767.98px){
@@ -261,13 +260,12 @@
     padding-right: 24px;
 
      background-color: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms var(--hover-cubic);
-    transform: translate(0);
-    transform: translatey(101%);
-    transition: transform, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     overflow: auto;
+    transform: translatey(101%);
+    transition: transform 250ms ease color var(--accent-cl), opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
 }
 
 
