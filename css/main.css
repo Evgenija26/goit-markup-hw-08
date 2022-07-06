@@ -260,7 +260,7 @@ img {
   }
 }
 
-.modal .btn.close {
+.btn.close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -282,7 +282,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.modal .btn.close:hover, .modal .btn.close:focus {
+.btn.close:hover, .btn.close:focus {
   fill: var(--accent-cl);
 }
 
@@ -334,6 +334,8 @@ img {
   left: 12px;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
+  -webkit-transition: fill 250ms var(--hover-cubic);
+  transition: fill 250ms var(--hover-cubic);
 }
 
 .label-text {
@@ -1832,6 +1834,8 @@ img {
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translatey(0);
           transform: translatey(0);
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 @media screen and (max-width: 767.98px) {
   .portfolio__box {
@@ -1917,7 +1921,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer__blok {
     margin-bottom: 60px;
     -webkit-box-pack: center;

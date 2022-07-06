@@ -51,7 +51,7 @@
     }
 }
 
-.modal .btn.close {
+.btn.close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -118,6 +118,7 @@
     left: 12px;
 
     transform: translatey(-50%);
+    transition: fill 250ms var(--hover-cubic);
 }
 
 .label-text {
@@ -222,9 +223,12 @@
 }
 
 .custom-checkbox {
-
+    // position: fixed;
     width: 16px;
     height: 15px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     display: inline-block;
     border: 2px solid var(--black);
     border-radius: 2px;
@@ -240,7 +244,7 @@
 }
 }
 
-.confirm .label-text {
+ .confirm .label-text {
     margin: 0;
     padding: 0;
     font-size: 14px;
