@@ -223,17 +223,16 @@
 }
 
 .custom-checkbox {
-    // position: fixed;
+    
     width: 16px;
     height: 15px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    vertical-align: middle;
+
     display: inline-block;
     border: 2px solid var(--black);
     border-radius: 2px;
     transition: var(--modal-transition);
-    // margin-right: 7px;
+
     transition: background-color 250ms var(--hover-cubic);
 
     fill: var(--white);
