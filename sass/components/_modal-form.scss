@@ -10,6 +10,7 @@
     z-index: 3;
     opacity: 1;
     transition: opacity 250ms var(--hover-cubic), visibility 250ms var(--hover-cubic);
+    // overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
