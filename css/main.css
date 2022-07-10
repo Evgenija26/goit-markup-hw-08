@@ -699,7 +699,13 @@ img {
           transform: translateX(0);
 }
 
+.mob-menu.is-close-menu {
+  pointer-events: none;
+}
+
 .menu-toggle {
+  width: 24px;
+  height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1199,9 +1205,6 @@ img {
   color: var(--white);
 }
 
-/*============================*/
-/* About us*/
-/*============================*/
 .about-us__sektion {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1231,7 +1234,7 @@ img {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .about-us__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1639,9 +1642,6 @@ img {
   fill: currentColor;
 }
 
-/*============================*/
-/* Portfolio*/
-/*============================*/
 .portfolio__section {
   background: var(--white);
   margin-top: 0px;
@@ -1800,6 +1800,22 @@ img {
   opacity: 1;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 767.98px) {
+  .portfolio__img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__img {
+    width: 100%;
+  }
 }
 
 .portfolio__projects-item-title {

@@ -1,12 +1,15 @@
 .mob-menu.is-open {
     transform: translateX(0);
 
-    
+}
+
+.mob-menu.is-close-menu {
+    pointer-events: none;
 }
 
 .menu-toggle{
-    // width: 24px;
-    //     height: 16px;
+        width: 24px;
+        height: 16px;
         display: flex;
         align-items: center;
         justify-content: center;

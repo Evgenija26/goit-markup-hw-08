@@ -145,8 +145,20 @@
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+}
 
+.portfolio__img{
+    @media screen and(max-width:767.98px) {
+            width: 100%;
+        }
     
+        @media screen and(min-width: 768px) {
+            width: 100%;
+        }
+    
+        @media screen and(min-width: 1200px) {
+            width: 100%;
+        }
 }
 
 .portfolio__projects-item-title {
@@ -201,7 +213,6 @@
     background: rgba(33, 150, 243, 0.9);
     
     overflow: hidden;
-
 
     &:hover
      .overlay {
